@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Analysis Results</title>
+</head>
+<body>
+    <h1>CV Analysis Results</h1>
+    <h2>Named Entities Extracted</h2>
+    <ul>
+        {% for entity in entities %}
+            <li>{{ entity }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Skills Identified</h2>
+    <ul>
+        {% for skill in skills %}
+            <li>{{ skill }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Recommended Jobs</h2>
+    <ul>
+        {% for job in jobs %}
+            <li>{{ job }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Suggestions to Improve Profile</h2>
+    <ul>
+        {% for suggestion in suggestions %}
+            <li>{{ suggestion }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
