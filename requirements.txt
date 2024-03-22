@@ -1,0 +1,5 @@
+Flask
+docx
+PyPDF2
+spacy
+googlesearch-python
